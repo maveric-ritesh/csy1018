@@ -1,0 +1,277 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-repeat:no-repeat;
+	background-size:100% auto;
+}
+
+
+header,footer{
+		text-align:center;
+		padding:5%;
+		height: 0.2%;
+      }
+
+footer{
+	background:#07162d;
+	color:white;
+	font-size: 20px;
+}
+
+nav{
+	position: fixed;
+	width: 100%;
+	box-shadow: 2px 2px 7px #07162d;
+;
+}
+nav ul{
+		margin:0;
+		display:flex;
+		justify-content:space-around;
+		background-color: #07162d;
+}
+nav ul li{
+	list-style:none;
+	margin:0.5%;
+	padding:1%;
+
+}
+
+nav ul li a{
+	color:white;
+	text-decoration: none;
+	-webkit-transition: width .9s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	transition: .9s;
+}
+
+nav ul li a:hover{
+	text-decoration:underline;
+	color:grey;
+	font-size:30px;
+
+}
+
+/*main content & body holder */
+section{
+	display:flex;
+}
+
+/*main body content holder*/
+.main{
+	width:71%;text-align: left;padding:2%;}
+
+/*langing page title*/
+.main .title{
+	color: white;
+	font-weight: bold;
+	font-size:40px;
+}	
+
+/*lading page sub title type 1*/
+.main .sub1{
+	color: white;
+	font-weight: bold;
+	font-size:25px;
+}
+
+/*landing page sub title type 2*/
+.main .sub2{
+	color: #ed5915;
+	font-weight: bold;
+	font-size:25px;
+}
+
+
+/*landing page main container*/
+.landing_page_cont{
+	padding-left: 10%;
+	width: 40%;
+}
+
+/*main contents buttons*/
+.main button{
+	border-radius: 5px;
+	height: 6%;
+	width: 17%;
+	border-color: #ed5915;
+	font-size: 13px;
+}
+
+.main .btn1{
+	background-color:#ed5915;
+	color:white;
+}
+
+.main .btn2{
+	color:#ed5915;
+}
+
+.main .btn1:hover{
+	cursor: hand;
+	background-color:#dd5313;
+
+}
+
+.main .btn2:hover{
+	cursor: hand;
+	background-color:#e5e3e3;
+
+}
+
+
+.main table{
+	padding-left: 20%;
+}
+
+.main table th img{
+	width: 50%;
+	height: 50%;
+	-webkit-transition: width .5s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	transition: .5s;
+}
+
+.main table th img:hover{
+	width: 56%;
+	height: 56%;
+	cursor:hand;
+}
+
+/*body side bar content holder*/
+.sidebar{
+	background:#3b393a;width:21%;
+	text-align: center;
+	padding:2%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.sidebar a , .sidebar h3 , .sidebar h5{
+  color:white;
+}
+
+header a {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:30px;
+}
+
+.table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th{
+	width:40%;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr td:hover {background-color: #ddd;}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.info_icon{
+	height:auto;
+	width:20%;
+}
+
+.prof_img{
+	border:3px solid white;
+	border-radius:50%;
+	height:auto; width:79%;
+	-webkit-transition: width 1.4s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	transition: width 1.4s;
+}
+
+.prof_img:hover{
+	width: 90%;
+}
+
+.sidebar .leading{
+	padding-top:40%;
+}
+
+.sidebar h5{
+		font-size:20px;
+}
+
+.text_field {
+    width: 20%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+		padding: 14px 20px;
+    background-color: white;
+    background-position: 10px 10px;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.button{
+	width: 20%;
+	height:5%;
+}
+
+.text_field:focus {
+    width: 50%;
+}
+
+.contact_form{
+	padding-left:30%;
+	text-align: center;
+	align-content: center;
+}
+
+.mapouter{
+	overflow:hidden;
+	height:200px;
+	width:653px;
+	padding-left:34%;
+}
+.gmap_canvas {
+		background:none!important;
+		height:200px;
+		width:653px;
+	}
+@media screen and (max-width:600px){
+	nav{
+		position: relative;
+	}
+	nav ul{
+		flex-direction:column;
+	}
+	nav ul li{
+		width:94%;
+		margin:1%;
+		padding:1%;
+	}
+	section{
+		flex-direction: column;
+	}
+	.main{
+		width:96%;
+		order:10%;
+	}
+	.sidebar{
+		width:96%;
+		order:1;
+	}
+}
